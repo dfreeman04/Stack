@@ -90,8 +90,7 @@ p {
 /* HEADER */
 header {
   color:#FFFFFF;
-  background: #34495E url("../images/header-background.png") top center no-repeat;
-  background: url("../images/header-background.png") top center no-repeat, linear-gradient(206deg, #6DAB42 0%, #6DAB42 94%);
+  background: #6DAB42 url("../images/header-background.png") top center no-repeat;
   background-size:cover;
 } 
 
