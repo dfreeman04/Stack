@@ -294,6 +294,9 @@ header .hero img {
    width:auto;
    margin:0;
 }
+.testimonials div {
+  margin-top: 20px;
+}
 .testimonials blockquote:after {
    top: 100%;
    left: 13%;
