@@ -20,7 +20,7 @@ h2 {
 p {
   font-size:  16px; 
   line-height: 19px;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 img-src {
@@ -151,7 +151,7 @@ header .hero h1 {
 header .hero p {
   font-size: 22px;
   line-height: 26px;
-  font-weight: 300;
+  font-weight: 100;
   margin:10px 0 40px;
 }
 
@@ -382,6 +382,47 @@ header .hero img {
    background:#F7F7F7;
  }
  .left-nav {
+   height: 100px;
+   width: 280px;
+   color: #FFFFFF;
+   background: #3F6A21;
+   float: left;
+   position: absolute;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(-280px,0);
+     -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+     -o-transform: translate(-280px,0); /** Opera **/
+     -moz-transform: translate(-280px,0); /** Firefox **/
+ }
+ .left-nav.open {
+   display:block;
+   width:280px;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+     z-index: 100;
+ }
+ .hamburger {
+   position:absolute;
+   z-index: 1000;
+   background:#6DAB42;
+   color:#FFF;
+   text-decoration: none;
+   font-size: 22px;
+   padding: 10px 15px;
+   border-radius: 4px;
+   left: 5px;
+   top: 15px;
+ }
+ .left-nav {
    height: 100vh;
    width:14.66666667%;
    color:#FFFFFF;
@@ -417,10 +458,11 @@ header .hero img {
  .left-nav .items ul li a {
    color:#FFFFFF;
    text-decoration: none;
-   font-weight: 400;
+   font-weight: 100;
  }
- .left-nav .active a {
+ .left-nav .active {
    background-color: #3F6A21;
+   width: 100%;
  }
  .left-nav .items ul li a i {
    width:16px;
@@ -448,7 +490,7 @@ header .hero img {
    display: inline-block;
    vertical-align: top;
    padding-top: 12px;
-   font-weight: 400;
+   font-weight: 100;
    margin:0 0 0 10px;
  }
  .left-nav .settings a {
@@ -542,6 +584,32 @@ header .hero img {
    .content-item {
      width:23%;
      margin:0 1% 25px;
+   }
+ }
+ /* Mobile Nav */
+ @media (min-width:992px) {
+   .left-nav {
+     height: 100vh;
+     width:14.66666667%;
+     color:#FFFFFF;
+     background: #6DAB42;
+     float:left;
+     position: fixed;
+     display:block;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .left-nav.open {
+     width:14.66666667%;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   }
+   .hamburger {
+     display:none;
    }
  }
  .item-box > img {
