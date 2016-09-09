@@ -20,7 +20,7 @@ h2 {
 p {
   font-size:  16px; 
   line-height: 19px;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 img-src {
@@ -458,7 +458,7 @@ header .hero img {
  .left-nav .items ul li a {
    color:#FFFFFF;
    text-decoration: none;
-   font-weight: 100;
+   font-weight: 400;
  }
  .left-nav .active {
    background-color: #3F6A21;
@@ -474,7 +474,7 @@ header .hero img {
  .left-nav .settings {
    position:absolute;
    width:100%;
-   bottom:0;
+   bottom:-10px;
    left:0;
    right:0;
    padding:30px 0;
@@ -483,14 +483,15 @@ header .hero img {
    height:35px;
    width:35px;
    border-radius: 50%;
-   margin-left:10px;
+   margin-left:12px;
+   margin-top: 12px;
    display: inline-block;
  }
  .left-nav .settings p {
    display: inline-block;
    vertical-align: top;
-   padding-top: 12px;
-   font-weight: 100;
+   padding-top: 25px;
+   font-weight: 400;
    margin:0 0 0 10px;
  }
  .left-nav .settings a {
@@ -500,8 +501,6 @@ header .hero img {
    float: right;
    margin-right:10px;
    margin-top:8px;
-
-
  }
   /* CONTENT */
  .content {

@@ -56,12 +56,11 @@
   color:#3F6A21;
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight:100;
+  font-weight:400;
  }
-.settings.dropit {
+ .settings.dropit {
   list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
+  padding-top: 65px;
   float: right;
   display: inline-block;
 }
@@ -107,7 +106,7 @@
   color:#3F6A21;
   text-decoration: none;
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-weight:100;
+  font-weight:400;
   transform: rotate(180deg);
  }
 
